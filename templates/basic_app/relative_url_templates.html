@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES </h1>
+    <a href="{% url 'basic_app:other'%}">THE OTHER PAGE </a>
+    <p></p>
+    <a href="{% url 'admin:index'%}">LINK TO ADMIN</a>
+    <p></p>
+    <a href="{% url 'index'%}">LINK TO INDEX</a>
+    <p></p>
+    <a href="https://www.udemy.com/">Udemy Site</a> 
+    {% comment %} wow! you can actually call an outside site!
+    {% endcomment %}
+    <p></p>
+    <a href="https://docs.djangoproject.com/en/4.2/topics/templates/">Django Template Documentation</a>
+  </body>
+</html>

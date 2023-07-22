@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+     <h1>WELCOME TO INDEX </h1>
+     <h2>This is index.html page showing!</h2>
+     <h2>{{ text|upper }}  {{ number|add:"99" }} (this is coming from a context dictionary)</h2>
+     <h2>{{ text|cut:'world' }}  {{ number|add:"99" }} (this is by using a custom filter on the 'hello world')</h2>
+    
+  {% endblock %}
+     
+
